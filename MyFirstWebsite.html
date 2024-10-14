@@ -1,0 +1,119 @@
+<!--Portfolio Website-->
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" href="MyFristWebsiteStyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Marisa Zorrilla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marisa Zorrilla">
+  <meta name="description" content="Marisa Zorrilla's Portfolio Website">
+</head>
+
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home" onclick="closeNav()">Home</a>
+    <a href="#about" onclick="closeNav()">About Me</a>
+    <a href="#links" onclick="closeNav()">External Links</a>
+  </div>
+
+  <div class="menu-icon" onclick="openNav()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <!-- Header/Home -->
+  <header id="home">
+    <div style="display:inline-block; vertical-align:middle;">
+      <img src="C:\Users\mnzor\OneDrive\Pictures\grad_img1.jpg" alt="Headshot" style="width:550px;height:800px;">
+    </div>
+    <div style="display:inline-block; margin-left:150px">
+      <h1 style="margin-bottom:10px">Marisa Zorrilla</h1>
+      <p style="text-align:center; font-size:150%; margin-top:0;">Software Developer</p>
+      <a href="C:\Users\mnzor\Downloads\Marisa Zorrilla's Resume 3.pdf" download="Marisa_Zorrilla's_Resume_3.pdf">
+        <button class="download">Download Resume</button>
+      </a>
+    </div>
+  </header>
+
+  <!-- About me sction -->
+  <div id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello, my name is Marisa Zorrilla and I am a recent graduate from Cornell University
+      with a Bachelor's of Arts degree in Computer Science and a minor
+      in Biometry and Statistics. I am seeking an entry level poition in a related field to apply my knowledge
+      and learn from experienced professionals. Throughout my
+      undergraduate years, I split my time between studies and being a member of the
+      Cornell Varsity Softball team which allowed me to practice essentials skills of
+      time management and prioritization. I enjoy working in collaborative environments
+      while also staying self-motivated. I take pride in my strong problem-solving skills and have
+      a passion for developing efficient and user-friendly software. Some of my main
+      programming related interests are AI and machine learning, but I am also well-versed
+      in frontend/backend software development.
+    </p>
+    <h3 style="margin-left:100px; margin-right:100px;">Relevant Courses:</h3>
+    <ul style="margin-left:100px; margin-right:100px;font-size: 120%">
+      <li>CS 1110: Intro to Python <button onclick="myFunction('cs1110')">v</button>
+        <div id="cs1110" style="display:none">
+          Description of CS 1110
+        </div>
+      </li>
+      <li>CS 2110: OOP and Data Structures <button onclick="myFunction('cs2110')">v</button>
+        <div id="cs2110" style="display:none">
+          Description of CS 2110
+        </div>
+      </li>
+      <li>CS 2800: Discrete Structures</li>
+      <li>CS 3110: Data Structures and Functional Programming</li>
+      <li>CS 3410: Computer System Organization</li>
+      <li>CS 4120: Intro to Compilers</li>
+      <li>CS 4410: Operating Systems</li>
+      <li>CS 4740: Natural Language Processing</li>
+      <li>CS 4820: Intro to Machine Learning</li>
+    </ul>
+  </div>
+
+  <!-- External Links -->
+  <div id="links">
+    <h2>External Links</h2>
+    <p>
+      Here is a link to my <b>LinkedIn</b> account:
+      <a href="https://www.linkedin.com/in/marisa-zorrilla-95061125b" title="Go to Marisa's profile"
+        target="_blank">LinkedIn</a>
+    </p>
+    <p>
+      Here is a link to my personal <b>GitHub</b>:
+      <a href="https://github.com/mnzorrilla" title="Go to Marisa's GitHub profile" target="_blank">GitHub</a>
+    </p>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function myFunction(text) {
+      var x = document.getElementById(text);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
